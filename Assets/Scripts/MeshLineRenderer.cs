@@ -60,7 +60,7 @@ public class MeshLineRenderer : MonoBehaviour {
 		else {
 			l = lastgoodorientation;
 		}
-
+        
 		l.Normalize();
 
 		if(all) {

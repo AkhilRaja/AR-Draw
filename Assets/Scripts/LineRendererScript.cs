@@ -12,7 +12,8 @@ public class LineRendererScript : MonoBehaviour {
 	private LineRenderer line;
 	public float magnitudeVarience;
 	public float angleVarience;
-
+    public float width;
+    public Material _material;
 	void Start () {
 		positions = new List<Vector3>();
 	}
@@ -20,16 +21,16 @@ public class LineRendererScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-        /*
+        
 		if (Input.GetButtonDown("Fire1"))
 		{
 			lineObject = new GameObject();
 			line = lineObject.AddComponent<LineRenderer>();
 			line.useWorldSpace = true;
-			line.startWidth = 0.1f;
+			line.startWidth = width;
 			line.receiveShadows = false;
 			line.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-
+            line.material = _material;
 
 			positions.Add(place.transform.position);
 			currentPosition = positions[positions.Count-1];
@@ -62,7 +63,7 @@ public class LineRendererScript : MonoBehaviour {
 			WriteToFile();
 			positions.Clear();
 		}
-        */
+        
 	}   
 
 	private void WriteToFile()

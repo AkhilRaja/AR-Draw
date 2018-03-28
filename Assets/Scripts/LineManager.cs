@@ -25,8 +25,8 @@ public class LineManager : MonoBehaviour {
             m_MeshFilter = line.AddComponent<MeshFilter>();
             line.AddComponent<MeshRenderer>();
             curLine = line.AddComponent<MeshLineRenderer>();
-
-            curLine.setWidth(0.2f);
+            
+            curLine.setWidth(0.05f);
 
         }
         if (Input.GetButton("Fire1"))
