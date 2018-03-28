@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore')" />
+  <Import Project="C:\Users\apappu\Documents\NoBillBoardLines\App\before.NoBillBoardLines.sln.targets" Condition="exists('C:\Users\apappu\Documents\NoBillBoardLines\App\before.NoBillBoardLines.sln.targets')" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>ARM</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>C:\Users\apappu\Documents\NoBillBoardLines\App\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>NoBillBoardLines.sln</SolutionFileName>
+    <SolutionName>NoBillBoardLines</SolutionName>
+    <SolutionPath>C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and !('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0' or '$(MSBuildToolsVersion)' == '2.0')">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'ARM') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemGroup>
+    <SolutionConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|x64</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|x86</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Master|ARM">
+      <Configuration>Master</Configuration>
+      <Platform>ARM</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Master|x64">
+      <Configuration>Master</Configuration>
+      <Platform>x64</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|x64</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Master|x86">
+      <Configuration>Master</Configuration>
+      <Platform>x86</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|x86</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|x64</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|x86</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'x64') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|x64</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'x86') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Debug|x86</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Master') and ('$(Platform)' == 'ARM') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Master') and ('$(Platform)' == 'x64') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|x64</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Master') and ('$(Platform)' == 'x86') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Master|x86</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'ARM') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|ARM</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'x64') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|x64</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'x86') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{13A45C13-3265-47B8-BC48-A553B569DF55}" AbsolutePath="C:\Users\apappu\Documents\NoBillBoardLines\App\NoBillBoardLines\NoBillBoardLines.csproj" BuildProjectInSolution="True">Release|x86</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter')" />
+  <Import Project="C:\Users\apappu\Documents\NoBillBoardLines\App\after.NoBillBoardLines.sln.targets" Condition="exists('C:\Users\apappu\Documents\NoBillBoardLines\App\after.NoBillBoardLines.sln.targets')" />
+  <Target Name="Rebuild" />
+  <Target Name="Build" />
+  <Target Name="Clean" />
+  <Target Name="Publish" />
+</Project>
