@@ -4,4 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 75062f558ad9b8c479e8b759e801f514
+  - enabled: 1
+    path: Assets/Scenes/CloudAirDraw.unity
+    guid: 4f9e77511153d5b4e87e4b4d9506d99a
+  - enabled: 0
+    path: Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity
+    guid: be567d47d3ab94b3badc5b211f535a24
+  - enabled: 0
+    path: Assets/GoogleARCore/Examples/CloudAnchor/Scenes/CloudAnchor.unity
+    guid: 83fb41cc294e74bdea57537befa00ffc
+  m_configObjects: {}

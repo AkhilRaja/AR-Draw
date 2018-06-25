@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.IO;
+using UnityEngine;
+using UnityExtension;
 
 public class LineManager : MonoBehaviour {
 
@@ -37,12 +39,12 @@ public class LineManager : MonoBehaviour {
 
         if (Input.GetButtonUp("Fire1"))
         {
-            /*
+            
             var lStream = new FileStream("C:/Users/apappu/Documents/NoBillBoardLines/Assets/line.obj", FileMode.Create);
             var lOBJData = m_MeshFilter.sharedMesh.EncodeOBJ();
             OBJLoader.ExportOBJ(lOBJData, lStream);
             lStream.Close();
-            */
+            
         }
 	}
 }

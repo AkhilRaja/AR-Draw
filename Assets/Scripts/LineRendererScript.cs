@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class LineRendererScript : MonoBehaviour {
+public class LineRendererScript : NetworkBehaviour {
 
 	// Use this for initialization
 	public GameObject place;
-	private GameObject lineObject;
+	public GameObject lineObject;
+
 	private List<Vector3> positions; 
 	private  Vector3 currentPosition;
 	private Vector3 lastPosition;
@@ -14,59 +17,65 @@ public class LineRendererScript : MonoBehaviour {
 	public float angleVarience;
     public float width;
     public Material _material;
-	void Start () {
+    public bool createNewObject = false;
+    public CubeController cube;
+    public float frameDistance;
+
+    void Start () {
+
+        cube = this.gameObject.GetComponent<CubeController>();
 		positions = new List<Vector3>();
-	}
+        positions.Clear();
+    }
 
 	// Update is called once per frame
 	void Update()
 	{
-        
-		if (Input.GetButtonDown("Fire1"))
-		{
-			lineObject = new GameObject();
-			line = lineObject.AddComponent<LineRenderer>();
-			line.useWorldSpace = true;
-			line.startWidth = width;
-			line.receiveShadows = false;
-			line.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-            line.material = _material;
+        if (cube.isButtonDown || (positions.Count == 0))
+        {
+            if (line == null || line.positionCount > 2)
+            {
 
-			positions.Add(place.transform.position);
-			currentPosition = positions[positions.Count-1];
-			lastPosition = positions[positions.Count - 1];
+                var lineGameObject = GameObject.Instantiate(lineObject, transform.position, Quaternion.identity);
+                line = lineGameObject.GetComponent<LineRenderer>();
+                lineGameObject.transform.parent = this.transform;
+            }
+            positions.Clear();
+            positions.Add(this.transform.position);
+            //lastPosition = transform.position;
+
+        }   
+
+        if (cube.isButton)
+            {
+
+                currentPosition = this.transform.position;
+
+                if (lastPosition != currentPosition)
+                {
+                   
+                            positions.Add(this.transform.position);
+                            line.positionCount = positions.Count;
+                            line.SetPositions(positions.ToArray());
+                    
+                }
+                frameDistance = Vector3.Distance(currentPosition, lastPosition);
+                lastPosition = currentPosition;
+            }
 
 
-			//lastPosition = place.transform.position;
-			//positions.Add(place.transform.position);
-		}
-		if (Input.GetButton("Fire1"))
-		{
-			///
-			currentPosition = place.transform.position;
+        if (cube.isButtonUp || frameDistance > 0.1)
+        {
+            positions.Clear();
+        }
+      //  Debug.Log(frameDistance);
 
-			if (positions[positions.Count - 1] != currentPosition)
-			{
-				if (Vector3.Angle(currentPosition, positions[positions.Count - 1]) > angleVarience)
-				if ((currentPosition - positions[positions.Count - 1]).magnitude > magnitudeVarience )
-				{
-					positions.Add(place.transform.position);
-					line.positionCount = positions.Count;
-					line.SetPositions(positions.ToArray());
-				}
-			}
 
-			lastPosition = currentPosition;
-		}
-		if (Input.GetButtonUp("Fire1"))
-		{
-			WriteToFile();
-			positions.Clear();
-		}
-        
-	}   
+    }
 
-	private void WriteToFile()
+
+
+    private void WriteToFile()
 	{
         /*
 		string path = "Assets/Resources/test.txt";
