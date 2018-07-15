@@ -117,6 +117,7 @@ public class CubeController : NetworkBehaviour {
 
                     message.text = "SuccessFully Resolved";
                     clientAnchor = result.Anchor;
+                    clientAnchor.transform.rotation = transform.rotation;
                     this.transform.parent = clientAnchor.transform;                  
                 }));
             }

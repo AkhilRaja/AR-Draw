@@ -36,7 +36,7 @@ public class LineRendererScript : NetworkBehaviour {
             if (line == null || line.positionCount > 2)
             {
 
-                var lineGameObject = GameObject.Instantiate(lineObject, transform.position, Quaternion.identity);
+                var lineGameObject = Instantiate(lineObject, transform.position, Quaternion.identity);
                 line = lineGameObject.GetComponent<LineRenderer>();
                 lineGameObject.transform.parent = this.transform;
             }

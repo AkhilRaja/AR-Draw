@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/akhilraja/Shared-Air-Draw---Arcore/Build0.1.apk
+/Users/akhilraja/Shared-Air-Draw---Arcore/Build1.1.apk
 SceneListBegin?
 Assets/Scenes/LobbyScene.unity
 Assets/Scenes/CloudAirDraw.unity
@@ -246,3 +246,4 @@ dc5fa02202409049bc420a7b6efe5183 Assembly-CSharp.dll:.NetworkSpaceship
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExampleDocumentConversion
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExampleTextToSpeech
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExampleRetrieveAndRank
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NoSleep
